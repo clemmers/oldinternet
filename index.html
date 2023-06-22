@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>she my y2k</title>
+  </head>
+  <body bgcolor="#ffffff" background="./media/images/bg3.gif">
+    <embed src="#" autostart="true" hidden="true" loop="true" id="tune">
+    <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center">
+          <img src="./media/images/banner2.gif" width="100%">
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img src="./media/images/eyes.gif" width="100%">
+        </td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#ffffff">
+          hello
+        </td>
+      </tr>
+      <tr>
+        <td style="position: absolute; left: 5%;">
+            <img id="staticImage" src="./media/images/jammingjukebox_static.gif" style="cursor: pointer;" onclick="toggleAnimation(); return false;">
+            <img id="animatedImage" src="./media/images/jammingjukebox.gif" style="display: none; cursor: pointer;" onclick="toggleAnimation(); return false;">
+        </td>
+      </tr>
+    </table>
+
+  <!-- Footer section -->
+  <table width="100%" style="position: fixed; bottom: 0;">
+    <tfoot>
+      <tr>
+        <td align="center">
+          <img src="./media/images/html3.gif">
+          <img src="./media/images/madewithhtml.gif">
+          <img src="./media/images/hash_now.gif">
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+    <script>
+      function toggleAnimation() {
+        var staticImage = document.getElementById("staticImage");
+        var animatedImage = document.getElementById("animatedImage");
+        var audio = document.getElementById("tune");
+
+        if (staticImage.style.display === "none") {
+          audio.src = "#";
+          staticImage.style.display = "block";
+          animatedImage.style.display = "none";
+        } else {
+          audio.src = "./media/audio/tune.wav";
+          staticImage.style.display = "none";
+          animatedImage.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
