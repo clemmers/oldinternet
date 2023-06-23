@@ -4,7 +4,6 @@
     <title>she my y2k</title>
   </head>
   <body bgcolor="#ffffff" background="./media/images/bgpump.jpg">
-    <embed src="idontcarethatthisgivesanerror.wav" autostart="true" hidden="true" loop="true" id="tune">
     <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td>
@@ -27,26 +26,40 @@
         </td>
       </tr>
       <tr>
-        <td style="position: relative; right: 7%; width: 80%">
-            <img id="staticImage" src="./media/images/jammingjukebox_static.gif" width="20%" style="cursor: pointer;" onclick="toggleAnimation(); return false;">
-            <img id="animatedImage" src="./media/images/jammingjukebox.gif" width="20%" style="display: none; cursor: pointer;" onclick="toggleAnimation(); return false;">
-        </td>
-      </tr>
-      <tr>
-        <td align="right" style="position: fixed; width: 80%; right: 10%;">
-          <img src="./media/images/construction.gif" width="20%">
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          to be finished summer of '97
-        </td>
-      </tr>
-      <tr>
         <td style="position: fixed; left: 3%; width: 80%">
             <img src="./media/images/mellon.gif" width="20%">
         </td>
       </tr>
+    </table>
+    <br>
+    <table width="60%" background="./media/images/corkbg.gif" align="center" border="10" bordercolor="#000000" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+          <center>
+            <!-- label from acme.com/labelmaker -->
+            <img src="./media/images/boardlabel.gif">
+          </center>
+          <center>
+            <img src="./media/images/pushpin.gif" style="position: relative; width: 24; top:15;">
+          </center>
+          <center>
+            <img src="./media/images/jits.gif" border="2">
+          </center>
+        </td>
+      </tr>
+      </table>
+      <br>
+      <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="right" style="position: fixed; width: 80%; right: 10%;">
+            <img src="./media/images/construction.gif" width="20%">
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            to be finished summer of '97
+          </td>
+        </tr>
       <tr>
         <td bgcolor="#ffffff" background="./media/images/underconstruction.gif">
           <img src="./media/images/underconstruction.gif">
@@ -75,23 +88,5 @@
       </tr>
     </tfoot>
   </table>
-
-    <script>
-      function toggleAnimation() {
-        var staticImage = document.getElementById("staticImage");
-        var animatedImage = document.getElementById("animatedImage");
-        var audio = document.getElementById("tune");
-
-        if (staticImage.style.display === "none") {
-          audio.src = "idontcarethatthisgivesanerror.wav";
-          staticImage.style.display = "block";
-          animatedImage.style.display = "none";
-        } else {
-          audio.src = "./media/audio/tune.wav";
-          staticImage.style.display = "none";
-          animatedImage.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>
